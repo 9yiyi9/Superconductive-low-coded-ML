@@ -41,6 +41,7 @@ User should follow the instructions on web and input values accordingly. After e
 - Count plot: output a count plot for a chosen column (for discrete variables, show frequency distribution).
 
 **[Feature Transformation]:**
+
 User should follow the instructions on web and input values accordingly. After each method is applied, a new header for the dataset will be generated for user to review. Ignore the warinings on web if there is any.  
 
 - Fourier transformation: Transforms the features from the time domain x(t) to the frequency domain X(w) and stores the real part and imaginary -part of the resulting function X(w) into two columns respectively. 
@@ -59,6 +60,8 @@ User should follow the instructions on web and input values accordingly. After e
 
 **[Feature Engineering & Selection]:**
 
+User should follow the instructions on web and input values accordingly. After each method is applied, a new header for the dataset will be generated for user to review. Ignore the warinings on web if there is any.  
+
 - Best features:  Displays 20 top features based on chi2 best score
 
 - Plot Distribution: Displays distribution of a feature to aid user choosing a value for remove outliers
@@ -67,7 +70,7 @@ User should follow the instructions on web and input values accordingly. After e
 
 - Top Interaction: adding top interaction features based on linear regression score calculated from numerical features.
 
-- Drop Column: Drop column
+- Drop Column: Drop column. This will allow user to drop string columns before traning models. 
 
 **[EDA for Feature Visualization]:**
 Visualize correlations and covariance between top 20 features using heat map.
