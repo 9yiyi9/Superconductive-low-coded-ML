@@ -1,16 +1,23 @@
-**The Problem:**
+**Superconductive**
+
+**[The Problem]**:
+
 Building Machine Learning (ML) model is a very complex, time-consuming and challenging process. Data scientists spend much of their time on data cleaning and preparation. Moreover, they have to experiment on different ML Algorithms and compare all evaluation metrics to obtain the best results. This experimentation process can be lengthy and tedious making the barrier to entry high for ML jobs. Superconductive is aspired to make ML faster and accessible for all individuals and businesses. We built an ML platform to help data scientists quickly create complicated ML pipelines and identify the best model without coding while reducing the model creation time by at least half.  
 
-**Solution:**
+**[Solution]:**
+
 Superconductive offers a low-coded ML platform. The platform was built on many built-in function packages, so users don’t have to code. It streamlines the creation of all ML pipelines by summarizing commonly used methods for EDA, data cleaning, feature transformation and engineering, model building and evaluation. The tool is highly customized because users can make decisions throughout the process leveraging their insight. 
 
-**Methods:**
+**[Methods]:**
+
 Users are guided through each step of the ML and asked to select from various function packages in a user-friendly web environment. First, a user is provided with several data cleaning methods including handling missing values, data type conversion, text cleaning, etc. Next, seven different feature transformation options are provided. Depending on the needs, the user can transform any column by applying the selected method. The tool will then help the user create and identify the best interaction features. The tool is designed to solve both regression and classification problems with algorithms including logistic, KNN, SVM, random forest and decision tree. All models can automatically tune hyperparameters and ensure delivery of the best performance. Finally, the tool visualizes all model performances using various evaluation metrics to enable the user to easily identify the best model. Additionally, the tool uses EDA visualization to help users make more informed decisions along the process. 
 
-**[Superconductive.py]**
+**[Superconductive.py]:**
+
 Superconductive_final.py is the streamlit API written in python with streamlit modules. This displays the each of the sections for the application. User can download our Superconductive.py and start building their data pipeline. This interactive modules start with users uploading their csv into our drop down section. Then Superconductive will  show user a high level overview of their dataset and produces a missing data proportions heat map. It will automatically drop the columns that have more than 50% of missing values and replace the other missing values with a median value. Based on this users will have an understanding weather or not their dataset has missing values that should be treated or dropped. Then remaining steps will be a very user-friendly and interactivity where users will simply go over the specific sections [refer to the Code Structure below for more information] and choose the selections you want to apply and which columns you want to apply to. 
 
-**[Data]**
+**[Data]:**
+
 This folder contains our titanic dataset, which is a csv that we used to build our machine learning data pipeline. This dataset contains a variety of datatypes, which our low coded machine learning can apply various data transformations and feature transformation methods
 
 **[Code Structure]**
@@ -28,11 +35,13 @@ This folder contains our titanic dataset, which is a csv that we used to build o
 -Drop Columns: allows users to drop multiple columns. 
 
 **[EDA Visualization]:**
+
 -Distribution plot: output a 30-bin distribution plot for a chosen column (for continuous variables, show frequency distribution).
 
 -Count plot: output a count plot for a chosen column (for discrete variables, show frequency distribution).
 
 **[Feature Transformation]:**
+
 Transforms the features from the time domain x(t) to the frequency domain X(w) and stores the real part and imaginary -part of the resulting function X(w) into two columns respectively.
 
 -Get dummies: converts nominal categorical values into 0 or 1 numerical values and replaces the original column. 
@@ -78,4 +87,3 @@ B.  Feature scaling - Standard Scaler: feature scaling for numeric columns only 
 
 **[Visualize Results]**: 
 helps user visualize and compare evaluation metrics for different models. 
-
