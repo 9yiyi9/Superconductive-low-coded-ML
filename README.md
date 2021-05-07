@@ -22,7 +22,7 @@ To get started, user should upload their csv file to the drop box. Then Supercon
 
 **[Data Cleaning/Pre-processing]:**
 
-User should follow the instructions on web and input values accordingly. After each method is applied, a new header for the dataset will be generated for user to review. Ignore the warinings on web if there is any and select the method you need.  
+User should follow the instructions on web and input values accordingly. After each method is applied, a new header for the dataset will be generated for user to review. Ignore the warinings on web if there is any.  
 
 - Convert Data Type: allows user to convert numerical column into strings or convert string columns into numerical columns.
 
@@ -34,15 +34,16 @@ User should follow the instructions on web and input values accordingly. After e
 
 - Drop Columns: allows users to drop multiple columns. 
 
-**[EDA Visualization]:**
+**[EDA Visualization]:** 
 
 - Distribution plot: output a 30-bin distribution plot for a chosen column (for continuous variables, show frequency distribution).
 
 - Count plot: output a count plot for a chosen column (for discrete variables, show frequency distribution).
 
 **[Feature Transformation]:**
+User should follow the instructions on web and input values accordingly. After each method is applied, a new header for the dataset will be generated for user to review. Ignore the warinings on web if there is any.  
 
-Transforms the features from the time domain x(t) to the frequency domain X(w) and stores the real part and imaginary -part of the resulting function X(w) into two columns respectively. Depending on the needs, the user can transform any column by applying the selected method. The tool will then help the user create and identify the best interaction features.
+- Fourier transformation: Transforms the features from the time domain x(t) to the frequency domain X(w) and stores the real part and imaginary -part of the resulting function X(w) into two columns respectively. 
 
 - Get dummies: converts nominal categorical values into 0 or 1 numerical values and replaces the original column. 
  
