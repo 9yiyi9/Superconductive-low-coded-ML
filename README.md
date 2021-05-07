@@ -24,49 +24,49 @@ This folder contains our titanic dataset, which is a csv that we used to build o
 
 **[Data Cleaning/Pre-processing]:**
 
--Convert Data Type: allows user to convert numerical column into strings or convert string columns into numerical columns.
+- Convert Data Type: allows user to convert numerical column into strings or convert string columns into numerical columns.
 
--Extract Numbers From A String: allows user to extract numbers from a string (letter + numbers).The extracted content will be created as a new feature. 
+- Extract Numbers From A String: allows user to extract numbers from a string (letter + numbers).The extracted content will be created as a new feature. 
 
--Extract Letters From A String :extract letters from a string (letter + numbers). The extracted content will be created as a new feature. 
+- Extract Letters From A String :extract letters from a string (letter + numbers). The extracted content will be created as a new feature. 
 
--String Clean-up: allows user to clean up string columns by removing html tags, emoticons, and all special characters. 
+- String Clean-up: allows user to clean up string columns by removing html tags, emoticons, and all special characters. 
 
--Drop Columns: allows users to drop multiple columns. 
+- Drop Columns: allows users to drop multiple columns. 
 
 **[EDA Visualization]:**
 
--Distribution plot: output a 30-bin distribution plot for a chosen column (for continuous variables, show frequency distribution).
+- Distribution plot: output a 30-bin distribution plot for a chosen column (for continuous variables, show frequency distribution).
 
--Count plot: output a count plot for a chosen column (for discrete variables, show frequency distribution).
+- Count plot: output a count plot for a chosen column (for discrete variables, show frequency distribution).
 
 **[Feature Transformation]:**
 
 Transforms the features from the time domain x(t) to the frequency domain X(w) and stores the real part and imaginary -part of the resulting function X(w) into two columns respectively.
 
--Get dummies: converts nominal categorical values into 0 or 1 numerical values and replaces the original column. 
+- Get dummies: converts nominal categorical values into 0 or 1 numerical values and replaces the original column. 
  
--Label binarizer: converts binary nominal categorical values into 0 or 1 numerical values and replaces the original column.
+- Label binarizer: converts binary nominal categorical values into 0 or 1 numerical values and replaces the original column.
 
--Ordinal encoder: encodes ordinal categorical values into numerical values and preserves the rank/level within the categorical values.
+- Ordinal encoder: encodes ordinal categorical values into numerical values and preserves the rank/level within the categorical values.
 
--Log transformation: adds a new log-transformed column to the right-end of the data frame.
+- Log transformation: adds a new log-transformed column to the right-end of the data frame.
 
--A bag of word: clean, tokenize, and lemmatize words. Identify maximum 100 different words by counting frequency and turn them into new features.  
+- A bag of word: clean, tokenize, and lemmatize words. Identify maximum 100 different words by counting frequency and turn them into new features.  
 
 - Word2vec: given a set of texts that contains lists of words, calculates the average feature vector (maximum = 100) and turn them into new features. 
 
 **[Feature Engineering & Selection]:**
 
--Best features:  Displays 20 top features based on chi2 best score
+- Best features:  Displays 20 top features based on chi2 best score
 
--Plot Distribution: Displays distribution of a feature to aid user choosing a value for remove outliers
+- Plot Distribution: Displays distribution of a feature to aid user choosing a value for remove outliers
 
--Remove outliers: removes outliers using the box plot distribution chart.
+- Remove outliers: removes outliers using the box plot distribution chart.
 
--Top Interaction: adding top interaction features based on linear regression score calculated from numerical features.
+- Top Interaction: adding top interaction features based on linear regression score calculated from numerical features.
 
--Drop Column: Drop column
+- Drop Column: Drop column
 
 **[EDA for Feature Visualization]:**
 Visualize correlations and covariance between top 20 features using heat map.
@@ -80,9 +80,9 @@ B.  Feature scaling - Standard Scaler: feature scaling for numeric columns only 
 
 **[ML Models & Evaluations]**:  
 
--for classification problems, the tool offers algorithms including logistic, SVM, KNN, random forest, decision tree which are evaluated using accuracy, precision, F1, recall and confusion matrix; 
+- for classification problems, the tool offers algorithms including logistic, SVM, KNN, random forest, decision tree which are evaluated using accuracy, precision, F1, recall and confusion matrix; 
 
--for regression problems, the tool offers algorithms including KNN, random forest, decision tree, linear regression which are evaluated using mean absolute error, mean squared error, and root mean squared error. Hyperparameters are automatically tuned to ensure delivery of the best performance.
+- for regression problems, the tool offers algorithms including KNN, random forest, decision tree, linear regression which are evaluated using mean absolute error, mean squared error, and root mean squared error. Hyperparameters are automatically tuned to ensure delivery of the best performance.
 
 **[Visualize Results]**: 
 helps user visualize and compare evaluation metrics for different models. 
