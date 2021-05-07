@@ -93,3 +93,9 @@ User should choose whether it's a regression or a classification problem that he
 - for classification problems, the tool offers algorithms including logistic, SVM, KNN, random forest, decision tree which are evaluated using accuracy, precision, F1, recall and confusion matrix; 
 
 - for regression problems, the tool offers algorithms including KNN, random forest, decision tree, linear regression which are evaluated using mean absolute error, mean squared error, and root mean squared error. Hyperparameters are automatically tuned to ensure delivery of the best performance.
+
+
+**[Contact]**: 
+Juan Yu: juan.yu@mba.berkeley.edu
+Youn Jo Lee: yjlee@berkeley.edu 
+Evelyn Yang: evelyny0922@berkeley.edu
