@@ -8,10 +8,6 @@ Building Machine Learning (ML) model is a very complex, time-consuming and chall
 
 Superconductive offers a low-coded ML platform. The platform was built on many built-in function packages, so users don’t have to code. It streamlines the creation of all ML pipelines by summarizing commonly used methods for EDA, data cleaning, feature transformation and engineering, model building and evaluation. The tool is highly customized because users can make decisions throughout the process leveraging their insight. 
 
-**[Methods]:**
-
-Users are guided through each step of the ML and asked to select from various function packages in a user-friendly web environment.  
-
 **[Superconductive_final.py]:**
 
 Superconductive_final.py is the streamlit API written in python with streamlit modules. This displays the each of the sections for the application. User can download our Superconductive.py and start building their data pipeline. The platform is a very user-friendly and users can simply go over the specific sections [refer to the Code Structure below for more information] and choose methods they want to apply as well as the columns that they want to apply to. 
