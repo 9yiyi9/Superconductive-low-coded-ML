@@ -14,11 +14,14 @@ Users are guided through each step of the ML and asked to select from various fu
 
 **[Superconductive_final.py]:**
 
-Superconductive_final.py is the streamlit API written in python with streamlit modules. This displays the each of the sections for the application. User can download our Superconductive.py and start building their data pipeline. This interactive modules start with users uploading their csv into our drop down section. Then Superconductive will  show user a high level overview of their dataset and produces a missing data proportions heat map. It will automatically drop the columns that have more than 50% of missing values and replace the other missing values with a median value. Based on this users will have an understanding weather or not their dataset has missing values that should be treated or dropped. Then remaining steps will be a very user-friendly and interactivity where users will simply go over the specific sections [refer to the Code Structure below for more information] and choose the selections you want to apply and which columns you want to apply to. 
+Superconductive_final.py is the streamlit API written in python with streamlit modules. This displays the each of the sections for the application. User can download our Superconductive.py and start building their data pipeline. The platform is a very user-friendly and users can simply go over the specific sections [refer to the Code Structure below for more information] and choose methods they want to apply as well as the columns that they want to apply to. 
 
 **[Data]:**
 
-This folder contains our titanic dataset, which is a csv that we used to build our machine learning data pipeline. This dataset contains a variety of datatypes, which our low coded machine learning can apply various data transformations and feature transformation methods
+This folder contains our test CSV dataset - Titanic to test the machine learning pipeline we built. Titanic contains a variety of datatypes, which our low coded machine learning can apply various data transformations and feature transformation methods.
+
+To get started, user should upload their csv file to the drop box. Then Superconductive will show user a high level overview of their dataset and produces a missing data proportions heat map. It will automatically drop the columns that have more than 50% of missing values and replace the other missing values with a median value. Based on this users will have an understanding weather or not their dataset has missing values that should be treated or dropped. 
+
 
 **[Code Structure]**
 
