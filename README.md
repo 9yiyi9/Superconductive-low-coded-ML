@@ -54,10 +54,9 @@ Transforms the features from the time domain x(t) to the frequency domain X(w) a
 
 -A bag of word: clean, tokenize, and lemmatize words. Identify maximum 100 different words by counting frequency and turn them into new features.  
 
-**[Word2vec]:**
-Given a set of texts that contains lists of words, calculates the average feature vector (maximum = 100) and turn them into new features. 
+- Word2vec: given a set of texts that contains lists of words, calculates the average feature vector (maximum = 100) and turn them into new features. 
 
--Feature Engineering & Selection:
+**[Feature Engineering & Selection]:**
 
 -Best features:  Displays 20 top features based on chi2 best score
 
