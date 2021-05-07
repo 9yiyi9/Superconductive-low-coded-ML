@@ -74,9 +74,9 @@ Visualize correlations and covariance between top 20 features using heat map.
 **[Train & Validation Split]:** 
 Set up training and validation data sets
 
-A.  Feature scaling - Normalization: normalization.
+- Feature scaling - Normalization: normalization.
 
-B.  Feature scaling - Standard Scaler: feature scaling for numeric columns only in train and test set.
+- Feature scaling - Standard Scaler: feature scaling for numeric columns only in train and test set.
 
 **[ML Models & Evaluations]**:  
 
