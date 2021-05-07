@@ -14,12 +14,12 @@ Superconductive_final.py is the streamlit API written in python with streamlit m
 
 **[Data]:**
 
-This folder contains Titanic CSV file for user to explore and test how Superconductive works. Titanic contains a variety of datatypes, which our low coded machine learning can apply various data transformations and feature transformation methods.
-
-To get started, user should upload their csv file to the drop box. Then Superconductive will show user a high level overview of their dataset and produces a missing data proportions heat map. It will automatically drop the columns that have more than 50% of missing values and replace the other missing values with a median value. 
+This folder contains Titanic CSV file for user to explore and test what Superconductive can offer. Titanic contains a variety of datatypes, which allows user to apply various data cleaning and feature transformation methods.
 
 
 **[Code Structure]**
+
+To get started, user should upload their csv file to the drop box. Then Superconductive will show user a high level overview of their dataset and produces a missing data proportions heat map. It will automatically drop the columns that have more than 50% of missing values and replace the other missing values with a median value. 
 
 **[Data Cleaning/Pre-processing]:**
 
