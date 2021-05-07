@@ -36,7 +36,7 @@ User should follow the instructions on web and input values accordingly. After e
 - Drop Columns: allows users to drop multiple columns. 
 
 
-**[EDA Visualization]:** (this part only exists in jupyter notebook but will be added to Streamlit in the future)
+**[EDA Visualization]:** (Note: this section only exists in jupyter notebook but will be added to Streamlit in the future)
 
 - Distribution plot: output a 30-bin distribution plot for a chosen column (for continuous variables, show frequency distribution).
 
