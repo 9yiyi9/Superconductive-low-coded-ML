@@ -10,7 +10,7 @@ Superconductive offers a low-coded ML platform. The platform was built on many b
 
 **[Methods]:**
 
-Users are guided through each step of the ML and asked to select from various function packages in a user-friendly web environment. First, a user is provided with several data cleaning methods including handling missing values, data type conversion, text cleaning, etc. Next, seven different feature transformation options are provided. Depending on the needs, the user can transform any column by applying the selected method. The tool will then help the user create and identify the best interaction features. The tool is designed to solve both regression and classification problems with algorithms including logistic, KNN, SVM, random forest and decision tree. All models can automatically tune hyperparameters and ensure delivery of the best performance. Finally, the tool visualizes all model performances using various evaluation metrics to enable the user to easily identify the best model. Additionally, the tool uses EDA visualization to help users make more informed decisions along the process. 
+Users are guided through each step of the ML and asked to select from various function packages in a user-friendly web environment.  
 
 **[Superconductive_final.py]:**
 
@@ -18,14 +18,15 @@ Superconductive_final.py is the streamlit API written in python with streamlit m
 
 **[Data]:**
 
-This folder contains our test CSV dataset - Titanic to test the machine learning pipeline we built. Titanic contains a variety of datatypes, which our low coded machine learning can apply various data transformations and feature transformation methods.
+This folder contains Titanic CSV file for user to explore and test how Superconductive works. Titanic contains a variety of datatypes, which our low coded machine learning can apply various data transformations and feature transformation methods.
 
-To get started, user should upload their csv file to the drop box. Then Superconductive will show user a high level overview of their dataset and produces a missing data proportions heat map. It will automatically drop the columns that have more than 50% of missing values and replace the other missing values with a median value. Based on this users will have an understanding weather or not their dataset has missing values that should be treated or dropped. 
-
+To get started, user should upload their csv file to the drop box. Then Superconductive will show user a high level overview of their dataset and produces a missing data proportions heat map. It will automatically drop the columns that have more than 50% of missing values and replace the other missing values with a median value. 
 
 **[Code Structure]**
 
 **[Data Cleaning/Pre-processing]:**
+
+User should follow the instructions on web and input values accordingly. After each method is applied, a new header for the dataset will be generated for user to review. Ignore the warinings on web if there is any and select the method you need.  
 
 - Convert Data Type: allows user to convert numerical column into strings or convert string columns into numerical columns.
 
@@ -45,7 +46,7 @@ To get started, user should upload their csv file to the drop box. Then Supercon
 
 **[Feature Transformation]:**
 
-Transforms the features from the time domain x(t) to the frequency domain X(w) and stores the real part and imaginary -part of the resulting function X(w) into two columns respectively.
+Transforms the features from the time domain x(t) to the frequency domain X(w) and stores the real part and imaginary -part of the resulting function X(w) into two columns respectively. Depending on the needs, the user can transform any column by applying the selected method. The tool will then help the user create and identify the best interaction features.
 
 - Get dummies: converts nominal categorical values into 0 or 1 numerical values and replaces the original column. 
  
@@ -82,6 +83,8 @@ Set up training and validation data sets
 - Feature scaling - Standard Scaler: feature scaling for numeric columns only in train and test set.
 
 **[ML Models & Evaluations]**:  
+
+The tool is designed to solve both regression and classification problems with algorithms including logistic, KNN, SVM, random forest and decision tree. All models can automatically tune hyperparameters and ensure delivery of the best performance. Finally, the tool visualizes all model performances using various evaluation metrics to enable the user to easily identify the best model. Additionally, the tool uses EDA visualization to help users make more informed decisions along the process. 
 
 - for classification problems, the tool offers algorithms including logistic, SVM, KNN, random forest, decision tree which are evaluated using accuracy, precision, F1, recall and confusion matrix; 
 
