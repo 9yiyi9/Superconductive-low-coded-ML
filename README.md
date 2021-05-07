@@ -18,6 +18,7 @@ This folder contains Titanic CSV file for user to explore and test how Supercond
 
 To get started, user should upload their csv file to the drop box. Then Superconductive will show user a high level overview of their dataset and produces a missing data proportions heat map. It will automatically drop the columns that have more than 50% of missing values and replace the other missing values with a median value. 
 
+
 **[Code Structure]**
 
 **[Data Cleaning/Pre-processing]:**
@@ -34,11 +35,13 @@ User should follow the instructions on web and input values accordingly. After e
 
 - Drop Columns: allows users to drop multiple columns. 
 
+
 **[EDA Visualization]:** 
 
 - Distribution plot: output a 30-bin distribution plot for a chosen column (for continuous variables, show frequency distribution).
 
 - Count plot: output a count plot for a chosen column (for discrete variables, show frequency distribution).
+
 
 **[Feature Transformation]:**
 
@@ -58,11 +61,12 @@ User should follow the instructions on web and input values accordingly. After e
 
 - Word2vec: given a set of texts that contains lists of words, calculates the average feature vector (maximum = 100) and turn them into new features. 
 
+
 **[Feature Engineering & Selection]:**
 
-User should follow the instructions on web and input values accordingly. After each method is applied, a new header for the dataset will be generated for user to review. Ignore the warinings on web if there is any.  
+User should follow the instructions on web and input values accordingly. After each method is applied, a new header for the dataset or visualization graph will be generated for user to review. Ignore the warinings on web if there is any.  
 
-- Best features:  Displays 20 top features based on chi2 best score
+- Best features:  Displays 20 top features based on chi2 best score. Automatically visualize correlations and covariance between these top 20 features using heat map.
 
 - Plot Distribution: Displays distribution of a feature to aid user choosing a value for remove outliers
 
@@ -72,23 +76,20 @@ User should follow the instructions on web and input values accordingly. After e
 
 - Drop Column: Drop column. This will allow user to drop string columns before traning models. 
 
-**[EDA for Feature Visualization]:**
-Visualize correlations and covariance between top 20 features using heat map.
 
-**[Train & Validation Split]:** 
-Set up training and validation data sets
+**[Train & Validation Split + Feature Scaling]:** 
 
-- Feature scaling - Normalization: normalization.
+After selecting train-test split, feartue scaling options are provided. User should follow the instructions on web and input values accordingly.
+
+- Feature scaling - Normalization: normalization the whole dataset.
 
 - Feature scaling - Standard Scaler: feature scaling for numeric columns only in train and test set.
 
-**[ML Models & Evaluations]**:  
 
-The tool is designed to solve both regression and classification problems with algorithms including logistic, KNN, SVM, random forest and decision tree. All models can automatically tune hyperparameters and ensure delivery of the best performance. Finally, the tool visualizes all model performances using various evaluation metrics to enable the user to easily identify the best model. Additionally, the tool uses EDA visualization to help users make more informed decisions along the process. 
+**[ML Models + Evaluations + Results Visualization]**:  
+
+User should choose whether it's a regression or a classification problem that he's trying to solve. After the selection, Superconductive will automatically train models and generate a bar chart for user to compare various evaluation metrics among different models. This way, user can easily identify the best model. All models can automatically tune hyperparameters and ensure delivery of the best performance. 
 
 - for classification problems, the tool offers algorithms including logistic, SVM, KNN, random forest, decision tree which are evaluated using accuracy, precision, F1, recall and confusion matrix; 
 
 - for regression problems, the tool offers algorithms including KNN, random forest, decision tree, linear regression which are evaluated using mean absolute error, mean squared error, and root mean squared error. Hyperparameters are automatically tuned to ensure delivery of the best performance.
-
-**[Visualize Results]**: 
-helps user visualize and compare evaluation metrics for different models. 
